@@ -42,7 +42,7 @@ public class WhileLoopFun {
        int counter = 0;
        while (counter != lengthOfNumber){
        counter = counter + 1;
-       double divide = Math.pow(10,counter);
+       double divide =  (number/(int)Math.pow(10,counter))*(int)Math.pow(10,counter);
        int digit = (int)(number % divide);
        System.out.println(digit);
        }
